@@ -63,7 +63,7 @@ body {
     line-height: 1.6;
 
     opacity: 0;              /* start hidden */
-    transform: scale(0.7);   /* start small */
+    transform: scale(0.5);   /* start small */
     animation: heartFade 1.5s ease forwards;
     animation-delay: 1.5s;   /* wait after page loads */
 }
@@ -77,6 +77,7 @@ body {
         transform: scale(1.1) translateY(-10px);
     }
     100% {
+        opacity: 1;          /* 🔥 THIS WAS MISSING */
         transform: scale(1);
     }
 }
