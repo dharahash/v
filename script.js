@@ -1,11 +1,11 @@
 const messages = [
-    "Wrong answer!"
-    "Ahemmmmm!"
+    "Wrong answer!",
+    "Ahemmmmm!",
     "Are you sure?",
     "Dei, Really sure??",
     "Chellakutty please...",
     "Eyy please ra dei!, podii",
-    "I love youuu, now say yes!"
+    "I love youuu, now say yes!",
     "If you say no, I will be really sad...",
     "I will be very sad...",
     "I will cryyyyy...",
