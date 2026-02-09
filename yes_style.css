@@ -1,6 +1,7 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap');
 
 /* 💕 Full-screen particle background */
 #particles-canvas {
@@ -37,10 +38,12 @@ body {
     margin-bottom: 20px;
 }*/
 .header_text {
-    font-family: "Pacifico", cursive;
+    font-family:"Sora", sans-serif;
     font-size: 6em;
+    font-weight:800;
     color: #AD1457;
     animation: titlePop 1s ease forwards;
+    text-transform: uppercase;
 }
 
 @keyframes titlePop {
@@ -55,9 +58,9 @@ body {
     height: auto;
 }
 .love_text {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 3em;
+    font-family:"Pacifico", cursive;
+    font-weight: 500;
+    font-size: 2em;
     color: #AD1457;
     margin-top: 20px;
     line-height: 1.6;
@@ -65,7 +68,7 @@ body {
     opacity: 0;              /* start hidden */
     transform: scale(0.5);   /* start small */
     animation: heartFade 1.5s ease forwards;
-    animation-delay: 1.5s;   /* wait after page loads */
+    animation-delay: 1.0s;   /* wait after page loads */
 }
 @keyframes heartFade {
     0% {
