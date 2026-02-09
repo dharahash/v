@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
     display: flex;
@@ -55,4 +55,112 @@ body {
     height: auto;
     border-radius: 10px;
     margin-top: 20px;
-  }
+  }*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+/* 🌸 Pinterest Valentine background */
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+    flex-direction:column;
+
+    font-family:"Nunito",sans-serif;
+
+    /* dreamy soft pink background */
+    background:
+        radial-gradient(circle at 20% 20%, #ffe4ec 0%, transparent 40%),
+        radial-gradient(circle at 80% 30%, #ffd6e5 0%, transparent 40%),
+        radial-gradient(circle at 50% 80%, #ffc2d1 0%, transparent 45%),
+        #fff0f5;
+
+    overflow:hidden;
+}
+
+/* 💞 floating tiny hearts decoration */
+.pinterest-hearts{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.pinterest-hearts span{
+    position:absolute;
+    width:14px;
+    height:14px;
+    background:#ff9acb;
+    transform:rotate(45deg);
+    opacity:0.4;
+    animation:floatHearts 12s linear infinite;
+}
+
+.pinterest-hearts span::before,
+.pinterest-hearts span::after{
+    content:"";
+    position:absolute;
+    width:14px;
+    height:14px;
+    background:#ff9acb;
+    border-radius:50%;
+}
+
+.pinterest-hearts span::before{ top:-7px; left:0;}
+.pinterest-hearts span::after{ left:-7px; top:0;}
+
+@keyframes floatHearts{
+    from{ transform:translateY(100vh) rotate(45deg);}
+    to{ transform:translateY(-20vh) rotate(45deg);}
+}
+
+/* 💖 main container */
+.container{
+    text-align:center;
+}
+
+h1{
+    font-size:2.5em;
+    color:#d32f2f;
+}
+
+/* ❤️ buttons */
+.buttons{
+    margin-top:20px;
+}
+
+.yes-button{
+    font-size:1.5em;
+    padding:10px 20px;
+    margin-right:10px;
+    background-color:#fa0561;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    box-shadow:0 6px 15px rgba(255,0,102,0.25);
+}
+
+.yes-button:hover{
+    background-color:#e03777;
+}
+
+.no-button{
+    font-size:1.5em;
+    padding:10px 20px;
+    background-color:#ffffffcc;
+    color:black;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* 🧸 gif */
+.gif_container img{
+    width:300px;
+    height:auto;
+    border-radius:10px;
+    margin-top:20px;
+}
