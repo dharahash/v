@@ -30,9 +30,16 @@ body {
 
 /* ❤️ Header text */
 .header_text {
-    font-size: 3em;
+    font-size: 6em;
     color: #d32f2f;
     margin-bottom: 20px;
+}
+
+.love_text {
+    font-size: 2em;
+    color: #ff3b7a;
+    margin-top: 20px;
+    line-height: 1.6;
 }
 
 /* 🧸 GIF styling */
@@ -40,4 +47,16 @@ body {
     width: 300px;
     max-width: 500px;
     height: auto;
+}
+.love_text {
+    font-size: 2em;
+    color: #AD1457;
+    margin-top: 20px;
+    line-height: 1.6;
+    animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
