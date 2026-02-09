@@ -93,15 +93,15 @@ body {
         transform: scale(1);
     }
 }
-/* 💗 BIG BALLOON HEART POP (REAL VERSION) */
+/* 💗 BIG BALLOON HEART POP (REAL VERSION) 
 .bubble-heart{
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%, -50%) scale(0);
 
-    width:55vw;          /* 🔥 HALF SCREEN WIDTH */
-    max-width:700px;     /* prevents TOO big on desktop */
+    width:55vw;          /* 🔥 HALF SCREEN WIDTH *
+    max-width:700px;     /* prevents TOO big on desktop *
 
     opacity:0;
     z-index:2;
@@ -137,6 +137,6 @@ body {
         opacity:0;
         transform:translateX(-50%) scale(0);
     }
-}
+}*/
 
 
