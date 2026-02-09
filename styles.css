@@ -72,10 +72,12 @@ body{
 
     /* HD layered blush background */
     background:
-        radial-gradient(1200px 600px at 10% 10%, #ffe4ec 0%, transparent 60%),
+        /*radial-gradient(1200px 600px at 10% 10%, #ffe4ec 0%, transparent 60%),
         radial-gradient(900px 500px at 90% 30%, #ffd6e5 0%, transparent 60%),
-        radial-gradient(700px 400px at 50% 100%, #ffc2d1 0%, transparent 60%),
-        linear-gradient(135deg,#fff0f5,#ffe6ee);
+        radial-gradient(700px 400px at 50% 100%, #ffc2d1 0%, transparent 60%),*/
+        linear-gradient(135deg, #ff8fa3, #ff5f7e),
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.15), transparent 40%),
+        linear-gradient(135deg, #ff8fa3, #ff5f7e);
 
     overflow-y:auto;
 }
@@ -199,17 +201,23 @@ h1{
 
 .falling-decor span{
     position:absolute;
-    font-size:26px;
+    top:-60px;
+    font-size:22px;
     animation:fall 12s linear infinite;
-    opacity:0.75;
+    opacity:0.85;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
 }
 
+/* cute floating motion */
 @keyframes fall{
     0%{
-        transform:translateY(-10vh) rotate(0deg);
+        transform:translateY(-10vh) translateX(0px) rotate(0deg);
+    }
+    50%{
+        transform:translateY(50vh) translateX(40px) rotate(180deg);
     }
     100%{
-        transform:translateY(110vh) rotate(360deg);
+        transform:translateY(120vh) translateX(-40px) rotate(360deg);
     }
 }
 
