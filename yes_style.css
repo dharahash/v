@@ -46,9 +46,10 @@ body {
 .header_text {
     font-family:"Sora", sans-serif;
     font-size: 6em;
-    font-weight:800;
-    color: #AD1457;
-    animation: titlePop 1s ease forwards;
+    font-weight:600;
+    color:#ffd1dc;              /* 🌸 soft baby pink */
+    text-shadow:0 6px 25px rgba(255,255,255,0.35);  /* dreamy glow */
+    animation: titlePop 0.5s ease forwards;
     text-transform: uppercase;
 }
 
@@ -66,8 +67,9 @@ body {
 .love_text {
     font-family:"Pacifico", cursive;
     font-weight: 500;
-    font-size: 2em;
-    color: #AD1457;
+    font-size: 3em;
+    color:#ffe4ec;      /* 💖 lighter pink */
+    text-shadow:0 3px 12px rgba(255,255,255,0.4);
     margin-top: 20px;
     line-height: 1.6;
 
