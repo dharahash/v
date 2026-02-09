@@ -93,45 +93,42 @@ body {
         transform: scale(1);
     }
 }
-/* 💗 BIG BALLOON HEART POP */
+/* 💗 BIG BALLOON HEART POP (REAL VERSION) */
 .bubble-heart{
     position:absolute;
-    top:20px;
+    top:60px;
     left:50%;
     transform:translateX(-50%) scale(0);
 
-    width:340px;
-    height:300px;
+    width:420px;        /* 🔥 BIG size */
+    pointer-events:none;
+    z-index:2;
 
-    background:#ff6f91;
-    z-index:2;              /* 🔥 IMPORTANT */
     opacity:0;
-
-    clip-path: path("M170 280 C30 190 0 110 80 60 C120 20 170 70 170 100 C170 70 220 20 260 60 C340 110 310 190 170 280 Z");
-
-    filter: drop-shadow(0 20px 30px rgba(255,80,120,0.45));
+    filter: drop-shadow(0 25px 35px rgba(255,80,120,0.45));
 
     animation: balloonPop 2s ease forwards;
     animation-delay:0.4s;
 }
 
 @keyframes balloonPop{
+
     0%{
         opacity:0;
         transform:translateX(-50%) scale(0);
     }
 
-    45%{
+    40%{
         opacity:1;
-        transform:translateX(-50%) scale(1.5);
+        transform:translateX(-50%) scale(1.3);
     }
 
-    65%{
-        transform:translateX(-50%) scale(1.8);
+    60%{
+        transform:translateX(-50%) scale(1.6);
     }
 
-    80%{
-        transform:translateX(-50%) scale(0.9);
+    75%{
+        transform:translateX(-50%) scale(0.95);
     }
 
     100%{
