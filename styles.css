@@ -59,28 +59,87 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
-/* 🌸 Pinterest Valentine background */
-body {
+/* 🌷 HD Pinterest Romantic Background */
+body{
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
     margin:0;
     flex-direction:column;
-
     font-family:"Nunito",sans-serif;
 
-    /* dreamy soft pink background */
+    /* HD layered blush background */
     background:
-        radial-gradient(circle at 20% 20%, #ffe4ec 0%, transparent 40%),
-        radial-gradient(circle at 80% 30%, #ffd6e5 0%, transparent 40%),
-        radial-gradient(circle at 50% 80%, #ffc2d1 0%, transparent 45%),
-        #fff0f5;
+        radial-gradient(1200px 600px at 10% 10%, #ffe4ec 0%, transparent 60%),
+        radial-gradient(900px 500px at 90% 30%, #ffd6e5 0%, transparent 60%),
+        radial-gradient(700px 400px at 50% 100%, #ffc2d1 0%, transparent 60%),
+        linear-gradient(135deg,#fff0f5,#ffe6ee);
 
     overflow:hidden;
 }
 
-/* 💞 floating tiny hearts decoration */
+/* 💎 Glass aesthetic container (HD look) */
+.container{
+    text-align:center;
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.35);
+    box-shadow:0 10px 40px rgba(255,105,135,0.15);
+}
+
+/* 💗 Title */
+h1{
+    font-size:2.7em;
+    color:#c2185b;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/* 🎀 Buttons */
+.buttons{
+    margin-top:25px;
+}
+
+.yes-button{
+    font-size:1.4em;
+    padding:12px 26px;
+    margin-right:12px;
+    background:linear-gradient(135deg,#ff5f8f,#ff2e7a);
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    box-shadow:0 6px 18px rgba(255,0,102,0.25);
+    transition:0.3s ease;
+}
+
+.yes-button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 24px rgba(255,0,102,0.35);
+}
+
+.no-button{
+    font-size:1.4em;
+    padding:12px 26px;
+    background:#ffffffcc;
+    color:#444;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* 🧸 GIF HD look */
+.gif_container img{
+    width:320px;
+    height:auto;
+    border-radius:14px;
+    margin-top:20px;
+    box-shadow:0 8px 30px rgba(255,100,150,0.15);
+}
+
+/* 💞 floating pinterest hearts */
 .pinterest-hearts{
     position:fixed;
     inset:0;
@@ -90,77 +149,29 @@ body {
 
 .pinterest-hearts span{
     position:absolute;
-    width:14px;
-    height:14px;
+    width:16px;
+    height:16px;
     background:#ff9acb;
     transform:rotate(45deg);
-    opacity:0.4;
-    animation:floatHearts 12s linear infinite;
+    opacity:0.35;
+    animation:floatHearts 14s linear infinite;
 }
 
 .pinterest-hearts span::before,
 .pinterest-hearts span::after{
     content:"";
     position:absolute;
-    width:14px;
-    height:14px;
+    width:16px;
+    height:16px;
     background:#ff9acb;
     border-radius:50%;
 }
 
-.pinterest-hearts span::before{ top:-7px; left:0;}
-.pinterest-hearts span::after{ left:-7px; top:0;}
+.pinterest-hearts span::before{ top:-8px; left:0;}
+.pinterest-hearts span::after{ left:-8px; top:0;}
 
 @keyframes floatHearts{
-    from{ transform:translateY(100vh) rotate(45deg);}
+    from{ transform:translateY(110vh) rotate(45deg);}
     to{ transform:translateY(-20vh) rotate(45deg);}
 }
 
-/* 💖 main container */
-.container{
-    text-align:center;
-}
-
-h1{
-    font-size:2.5em;
-    color:#d32f2f;
-}
-
-/* ❤️ buttons */
-.buttons{
-    margin-top:20px;
-}
-
-.yes-button{
-    font-size:1.5em;
-    padding:10px 20px;
-    margin-right:10px;
-    background-color:#fa0561;
-    color:white;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    box-shadow:0 6px 15px rgba(255,0,102,0.25);
-}
-
-.yes-button:hover{
-    background-color:#e03777;
-}
-
-.no-button{
-    font-size:1.5em;
-    padding:10px 20px;
-    background-color:#ffffffcc;
-    color:black;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-}
-
-/* 🧸 gif */
-.gif_container img{
-    width:300px;
-    height:auto;
-    border-radius:10px;
-    margin-top:20px;
-}
