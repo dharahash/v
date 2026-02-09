@@ -80,7 +80,7 @@ body{
     overflow-y:auto;
 }
 
-/* 💎 Glass aesthetic container (HD look) */
+/* 💎 Glass aesthetic container (HD look) 
 .container{
     text-align:center;
     padding:40px;
@@ -88,6 +88,15 @@ body{
     backdrop-filter: blur(12px);
     background: rgba(255,255,255,0.35);
     box-shadow:0 10px 40px rgba(255,105,135,0.15);
+}*/
+.container{
+    text-align:center;
+    padding:60px 80px;           /* 🔥 bigger card */
+    border-radius:24px;
+    backdrop-filter: blur(14px);
+    background: rgba(255,255,255,0.35);
+    box-shadow:0 15px 50px rgba(255,105,135,0.18);
+    max-width:650px;             /* makes card wider */
 }
 
 /* 💗 Title */
@@ -174,5 +183,29 @@ h1{
 @keyframes floatHearts{
     from{ transform:translateY(110vh) rotate(45deg);}
     to{ transform:translateY(-20vh) rotate(45deg);}
+}
+/* 💗 falling decorations */
+.falling-decor{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.falling-decor span{
+    position:absolute;
+    top:-50px;
+    font-size:22px;
+    animation:fall 10s linear infinite;
+    opacity:0.7;
+}
+
+@keyframes fall{
+    0%{
+        transform:translateY(-10vh) rotate(0deg);
+    }
+    100%{
+        transform:translateY(110vh) rotate(360deg);
+    }
 }
 
