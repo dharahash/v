@@ -52,11 +52,15 @@ body {
     text-shadow:0 6px 25px rgba(255,255,255,0.35);  /* dreamy glow */
     animation: titlePop 0.5s ease forwards;
     text-transform: uppercase;
+    font-size:clamp(2.2rem, 6vw, 6rem);  /* 🔥 responsive size */
+
 }
 
 @keyframes titlePop {
     from { transform: scale(0.6); opacity:0; }
     to { transform: scale(1); opacity:1; }
+    width:clamp(160px, 40vw, 300px);
+
 }
 
 /* 🧸 GIF styling */
@@ -78,6 +82,8 @@ body {
     transform: scale(0.5);   /* start small */
     animation: heartFade 1.5s ease forwards;
     animation-delay: 1.0s;   /* wait after page loads */
+    font-size:clamp(2.2rem, 6vw, 6rem);  /* 🔥 responsive size */
+
 }
 @keyframes heartFade {
     0% {
@@ -91,6 +97,26 @@ body {
     100% {
         opacity: 1;          /* 🔥 THIS WAS MISSING */
         transform: scale(1);
+    }
+}
+/* 📱 MOBILE OPTIMIZATION */
+@media(max-width:768px){
+
+    body{
+        align-items:flex-start;
+        padding-top:60px;
+    }
+
+    .container{
+        width:90%;
+    }
+
+    .header_text{
+        letter-spacing:1px;
+    }
+
+    .love_text{
+        line-height:1.4;
     }
 }
 /* 💗 BIG BALLOON HEART POP (REAL VERSION) 
