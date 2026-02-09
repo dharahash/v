@@ -63,7 +63,7 @@ body {
 body{
     display:flex;
     justify-content:center;
-    align-items:flex-start;
+    align-items:center;
     height:100vh;
     margin:0;
     flex-direction:column;
@@ -77,7 +77,7 @@ body{
         radial-gradient(700px 400px at 50% 100%, #ffc2d1 0%, transparent 60%),
         linear-gradient(135deg,#fff0f5,#ffe6ee);
 
-    overflow:hidden;
+    overflow-y:auto;
 }
 
 /* 💎 Glass aesthetic container (HD look) */
