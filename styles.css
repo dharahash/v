@@ -60,6 +60,10 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 /* 🌷 HD Pinterest Romantic Background */
+html, body {
+    overflow-x: hidden;   /* 🔥 disables left-right movement */
+    width:100%;
+}
 body{
     display:flex;
     justify-content:center;
@@ -115,6 +119,14 @@ h1{
 .buttons{
     margin-top:25px;
 }
+.buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;   /* prevents pushing sideways */
+}
+
 
 .yes-button{
     font-size:1.4em;
