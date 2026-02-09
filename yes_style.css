@@ -96,16 +96,18 @@ body {
 /* 💗 BIG BALLOON HEART POP (REAL VERSION) */
 .bubble-heart{
     position:absolute;
-    top:60px;
+    top:50%;
     left:50%;
-    transform:translateX(-50%) scale(0);
+    transform:translate(-50%, -50%) scale(0);
 
-    width:420px;        /* 🔥 BIG size */
-    pointer-events:none;
-    z-index:2;
+    width:55vw;          /* 🔥 HALF SCREEN WIDTH */
+    max-width:700px;     /* prevents TOO big on desktop */
 
     opacity:0;
-    filter: drop-shadow(0 25px 35px rgba(255,80,120,0.45));
+    z-index:2;
+    pointer-events:none;
+
+    filter: drop-shadow(0 30px 50px rgba(255,80,120,0.45));
 
     animation: balloonPop 2s ease forwards;
     animation-delay:0.4s;
